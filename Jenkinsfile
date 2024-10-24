@@ -5,6 +5,7 @@ pipeline {
         stage('UnitTest') {
             steps {
               sh '''cd test_code
+              ls -ltra
               python test_app.py
               '''
             }
